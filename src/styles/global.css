@@ -30,12 +30,28 @@
   --radius: 10px;
 }
 
+html[data-theme="dark"] {
+  --bg: #121212;
+  --bg-elevated: #1e1e1e;
+  --bg-header: #171717;
+  --text: #d8d8d8;
+  --text-strong: #f5f5f5;
+  --text-muted: #a0a0a0;
+  --accent: #ff6a2b;
+  --accent-hover: #ff8850;
+  --border: #333333;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 html {
   color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
 }
 
 body {
@@ -175,13 +191,13 @@ main {
 }
 
 .entry-subtitle {
-  color: #555;
+  color: var(--text-muted);
   margin: 0.25rem 0;
 }
 
 .entry-date {
   font-size: 0.85rem;
-  color: #888;
+  color: var(--text-muted);
   margin: 0;
 }
 
@@ -195,6 +211,48 @@ main {
 
 .post-content {
   margin-top: 1.5rem;
+}
+
+/* Theme toggle button — markup lives in Nav.astro */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background-color: var(--bg-elevated);
+  color: var(--text);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.theme-toggle .icon-moon {
+  display: block;
+}
+
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-toggle .icon-sun {
+  display: block;
 }
 
 @media (max-width: 600px) {
