@@ -58,8 +58,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:image" content={absoluteImage} />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <Nav />
-    <main class="container">
+    <main class="container" id="main-content">
       <slot /> 
     </main>      
     <Footer />
