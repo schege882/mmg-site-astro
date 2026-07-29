@@ -242,6 +242,27 @@ main {
   margin-top: 1.5rem;
 }
 
+/* General in-body images (poster, event photos) — shrink from full-width and center */
+.post-content img {
+  max-width: 600px;
+  margin: var(--space-sm) auto;
+}
+
+/* Logo row — wraps sponsor/partner logo images in markdown, spaced edge-to-edge */
+.post-content .logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.post-content .logo-row img {
+  max-width: none;
+  margin: 0;
+}
+
 /* Theme toggle button — markup lives in Nav.astro */
 .theme-toggle {
   display: inline-flex;

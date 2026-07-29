@@ -17,6 +17,8 @@ This event has received support from the CNR-ISM, the Abdus Salaam ICTP, the CNR
 
 <img src="/images/banners/pwf-training.jpg" alt="Prof. Matteo Gatti's presentation">
 
+<div class="logo-row">
 <img src="/images/logos/cnr-logo.jpeg" alt="CNR logo" width="120">
 <img src="/images/logos/ictp-logo.png" alt="ICTP logo" width="120">
 <img src="/images/logos/cnrs.png" alt="CNRS logo" width="120">
+</div>

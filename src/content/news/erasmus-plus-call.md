@@ -31,5 +31,7 @@ Please send your CV and relevant documentation of your academic qualifications t
 [erasmus-tukmmg-23@tukenya.ac.ke](mailto:erasmus-tukmmg-23@tukenya.ac.ke).
 All applications must be sent on or before **17th of April 2025**.
 
+<div class="logo-row">
 <img src="/images/logos/tuk-logo.webp" alt="Technical University of Kenya logo" width="80">
 <img src="/images/logos/unican-logo.jpg" alt="University of Cantabria logo" width="80">
+</div>
