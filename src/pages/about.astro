@@ -1,8 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
 import team from "../data/team.json";
 
-const base = import.meta.env.BASE_URL;
+const memberImages = import.meta.glob("/src/assets/images/members/*", { eager: true });
 ---
 
 <BaseLayout title="About Us">
@@ -24,17 +25,22 @@ const base = import.meta.env.BASE_URL;
 
   <h2>Our Members</h2>
   <ul class="grid team-grid">
-    {team.map((member) => (
-      <li class="card team-card">
-        <img src={`${base}${member.photo.replace(/^\//, "")}`} alt={member.name} width="150" height="150" />
-        <p>{member.name}</p>
-        {member.url && (
-        <p>
-          <a href={member.url} target="_blank" rel="noopener noreferrer">Personal website</a>
-        </p>
-      )}
-      </li>
-    ))}
+    {team.map((member) => {
+      const image = memberImages[`/src/assets/images/members/${member.photo}`]?.default;
+      return (
+        <li class="card team-card">
+          {image && (
+            <Image src={image} alt={member.name} width={150} height={150} />
+          )}
+          <p>{member.name}</p>
+          {member.url && (
+            <p>
+              <a href={member.url} target="_blank" rel="noopener noreferrer">Personal website</a>
+            </p>
+          )}
+        </li>
+      );
+    })}
   </ul>
 </BaseLayout>
 
