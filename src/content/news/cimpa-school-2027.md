@@ -1,7 +1,7 @@
 ---
 title: "Announcing CIMPA School 2027: Fundamentals of Density Functional Theory"
 author: "Dr. Michael Atambo"
-date: 2025-03-24
+date: 2026-03-24
 excerptImage: "/images/logos/cimpa_logo.jpeg"
 ---
 
