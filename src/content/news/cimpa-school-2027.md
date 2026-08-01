@@ -2,7 +2,7 @@
 title: "Announcing CIMPA School 2027: Fundamentals of Density Functional Theory"
 author: "Dr. Michael Atambo"
 date: 2026-03-24
-excerptImage: "/images/logos/cimpa_logo.jpeg"
+excerptImage: "/images/logos/cimpa-logo-horizontal.png"
 ---
 
 We are pleased to announce that the **Technical University of Kenya (TUK)**, in collaboration with **CIMPA**, will host a 10-day intensive school on the **Fundamentals of Density Functional Theory (DFT)** in 2027. 
